@@ -1,0 +1,29 @@
+.link-block {
+    margin-bottom: $paragraph-spacer-bottom;
+}
+
+.link-block__link-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.link-block__link {
+    color: darkgreen;
+
+    &:before {
+        color: inherit;
+    }
+}
+
+.link-block__link--intern {
+    &:before {
+        content: '[intern] ';
+    }
+}
+
+.link-block__link--download {
+    &:before {
+        content: '[download] ';
+    }
+}

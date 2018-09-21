@@ -1,0 +1,26 @@
+.headline-icon {
+    padding-bottom: 4px;
+    padding-left: 40px;
+    border-bottom: 1px solid black;
+    margin-bottom: $headline-icon-spacer-bottom;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.headline-icon--icon1 {
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        display: block;
+        content: ' ';
+
+        @include sprite($up);
+
+        scale: 0.25;
+        zoom: 0.25;
+    }
+}

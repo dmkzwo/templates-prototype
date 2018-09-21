@@ -1,0 +1,14 @@
+.top-bar__linklist-left {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: $top-bar-height;
+    float: left;
+}
+
+.top-bar__link-item {
+    height: $top-bar-height;
+    display: inline-block;
+    float: left;
+    border-right: 1px;
+}

@@ -1,0 +1,107 @@
+/* Settings */
+/* General definitions */
+body {
+  background-color: #e8e8e8; }
+
+/* Sprites */
+/* Patterns */
+.paragraph__text {
+  margin-bottom: 20px; }
+
+.top-bar__link {
+  height: 50px;
+  color: #ff0000;
+  line-height: 50px; }
+
+h1 {
+  margin-bottom: 20px;
+  text-decoration: underline; }
+
+.headline-icon__label {
+  color: grey; }
+
+.headline-icon__link {
+  white-space: nowrap; }
+
+.paragraph {
+  margin-bottom: 40px; }
+
+.top-bar__linklist-left {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  float: left; }
+
+.top-bar__link-item {
+  height: 50px;
+  display: inline-block;
+  float: left;
+  border-right: 1px; }
+
+.headline-icon--with-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+
+.headline-icon {
+  padding-bottom: 4px;
+  padding-left: 40px;
+  border-bottom: 1px solid black;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: relative; }
+
+.headline-icon--icon1:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+  content: ' ';
+  background-image: url(images/sprites/sprite.png);
+  background-position: 0px -128px;
+  width: 128px;
+  height: 128px;
+  scale: 0.25;
+  zoom: 0.25; }
+
+.content-container h3 {
+  color: darkgreen; }
+
+.link-block {
+  margin-bottom: 40px; }
+
+.link-block__link-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.link-block__link {
+  color: darkgreen; }
+  .link-block__link:before {
+    color: inherit; }
+
+.link-block__link--intern:before {
+  content: '[intern] '; }
+
+.link-block__link--download:before {
+  content: '[download] '; }
+
+.top-bar {
+  height: 50px;
+  background-color: grey; }
+
+/*# sourceMappingURL=maps/main.css.map */
