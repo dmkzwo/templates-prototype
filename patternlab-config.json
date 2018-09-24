@@ -1,6 +1,7 @@
 {
   "cacheBust": true,
   "cleanPublic" : true,
+  "logLevel": "0",
   "defaultPattern": "all",
   "defaultShowPatternInfo": false,
   "ishControlsHide": {
@@ -69,7 +70,8 @@
   "patternExportPatternPartials": ["pages-testpage"],
   "serverOptions": {
     "wait": 1000,
-    "ignore": "*.scss"
+    "ignore": "*.scss",
+    "logLevel": "error"
   },
   "starterkitSubDir": "dist",
   "styleGuideExcludes": [

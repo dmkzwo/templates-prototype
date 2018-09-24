@@ -1,0 +1,20 @@
+.bgcolor-content-standard {
+  background-color: lightgrey; }
+
+.key-color-main {
+  color: darkgreen; }
+
+.key-bgcolor-main {
+  background-color: darkgreen; }
+
+.content-container p > a {
+  color: darkgreen; }
+
+.special-container.key-bgcolor-main h3,
+.special-container.key-bgcolor-main h4,
+.special-container.key-bgcolor-main p,
+.special-container.key-bgcolor-main li,
+.special-container.key-bgcolor-main p > a {
+  color: white; }
+
+/*# sourceMappingURL=maps/theme_bibb.css.map */

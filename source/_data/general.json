@@ -8,10 +8,13 @@
   "listItemContent": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
   "h3Content": "Headline H3",
   "h4Content": "Headline H4",
+  "linkLabel": "Standard Link lorem ipsum",
 
   "linkBlockIntro": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.",
   "linkBlockLinkDownloadLabel": "Download Link",
   "linkBlockLinkInternLabel": "Interner Link",
-  "linkBlockLinkExternLabel": "Externer Link"
+  "linkBlockLinkExternLabel": "Externer Link",
 
+  "quoteText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
+  "quoteCaption": "Lorem ipsum dolor sit amet"
 }

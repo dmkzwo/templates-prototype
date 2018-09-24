@@ -5,9 +5,6 @@ body {
 
 /* Sprites */
 /* Patterns */
-.paragraph__text {
-  margin-bottom: 20px; }
-
 .top-bar__link {
   height: 50px;
   color: #ff0000;
@@ -23,8 +20,16 @@ h1 {
 .headline-icon__link {
   white-space: nowrap; }
 
-.paragraph {
+.quote {
+  padding-left: 100px;
   margin-bottom: 40px; }
+
+.quote__text {
+  font-style: italic;
+  font-weight: bold; }
+
+.quote__caption {
+  font-size: 9px; }
 
 .top-bar__linklist-left {
   list-style-type: none;
@@ -79,7 +84,7 @@ h1 {
   zoom: 0.25; }
 
 .content-container h3 {
-  color: darkgreen; }
+  text-decoration: underline; }
 
 .link-block {
   margin-bottom: 40px; }
@@ -89,16 +94,20 @@ h1 {
   margin: 0;
   padding: 0; }
 
-.link-block__link {
-  color: darkgreen; }
-  .link-block__link:before {
-    color: inherit; }
+.link-block__link:before {
+  color: inherit; }
 
 .link-block__link--intern:before {
   content: '[intern] '; }
 
 .link-block__link--download:before {
   content: '[download] '; }
+
+.special-container {
+  padding: 20px;
+  margin-bottom: 8px; }
+  .special-container h4 {
+    text-decoration: underline; }
 
 .top-bar {
   height: 50px;

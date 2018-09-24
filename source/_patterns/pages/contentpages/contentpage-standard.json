@@ -1,3 +1,5 @@
 {
-  "headlineMainContent": "Headline Content"
+  "bodyClass": "bibb",
+  "headlineMainContent": "Headline Content",
+  "iconHeadlineLabel": "Headline lorem ipsum"
 }
