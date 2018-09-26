@@ -2,7 +2,7 @@
 
 ## Vorbemerkungen
 
-Im folgenden Dokument werden die Begriffe *Pattern* und *Template* synomym verwendet.
+Es wurde bewusst auf jede Art der Gestaltung verzichtet, da dieser Prototyp zur technischen Abstimmung dienen soll und dadurch gleichzeitig der Aufwand durch nachträgliche Anpassungen gering gehalten wird.
 
 Die hier skizzierte Struktur und Vorgehensweise kann noch Veränderungen unterliegen und in der finalen Version abweichen.
 
