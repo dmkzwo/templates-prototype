@@ -10,12 +10,6 @@ body {
   color: #ff0000;
   line-height: 50px; }
 
-.c-headline-icon__label {
-  color: grey; }
-
-.c-headline-icon__link {
-  white-space: nowrap; }
-
 .c-quote {
   padding-left: 100px;
   margin-bottom: 40px; }
@@ -64,6 +58,12 @@ body {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   position: relative; }
+
+.c-headline-icon__label {
+  color: grey; }
+
+.c-headline-icon__link {
+  white-space: nowrap; }
 
 .c-headline-icon--icon1:before {
   position: absolute;

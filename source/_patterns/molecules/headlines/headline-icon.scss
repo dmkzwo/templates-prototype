@@ -9,6 +9,14 @@
     position: relative;
 }
 
+.c-headline-icon__label {
+    color: grey;
+}
+
+.c-headline-icon__link {
+    white-space: nowrap;
+}
+
 .c-headline-icon--icon1 {
     &:before {
         position: absolute;

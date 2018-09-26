@@ -103,9 +103,16 @@ Zusätzlich kommen folgende Namespaces (Prefixes) zum Einsatz:
 * **js-** Style-Klassen, die als Ankerpunkte für Javascript-Interaktion fungieren
 * **h-** Helfer-Klassen
 
+Soweit möglich wurde eine Benennung nach dem **BEM**-Prinzip angewendet.
+
 ### Theming
 
 Farb-Definitionen, die sich auf der Haupt- und den verschiedenen Portal-Seiten unterschiedlich aber konsistent verhalten müssen, werden jeweils über eine zusätzliche Stylesheet-Datei (theme-*.(s)css) definiert.
 Im Falle der Hauptseite z.B. theme_bibb.(s)css. Dadurch wird eine einfache Anpassung des jeweiligen Farbschemas erreicht.
 In dieser Datei werden alle Style-Klassen mit dem Namespace *th-* definiert.
 
+### Ausnahme Content-Container
+
+HTML-Elemente die über einen RichText-Editor eingefügt werden, sollen keine zusätzlichen Style-Klassen erhalten und weichen somit vom BEM-Prinzip ab.
+Diese Patterns (Atome, Moleküle) sind jeweils im Unterverzeichnis *basic* zu finden.
+Die notwendigen Styles finden sich bei den Organismen, die diese Patterns einbinden.
