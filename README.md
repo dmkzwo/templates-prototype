@@ -11,15 +11,29 @@ Die hier skizzierte Struktur und Vorgehensweise kann noch Veränderungen unterli
 ### Voraussetzungen
 
 * git
-* gulp (cli global)
 * node (>= v8*)
+* gulp (cli global)
 
-### Build-Prozess
+### Pattern Lab einrichten
+
+Clone mittels SSH:
 
     git clone git@github.com:dmkzwo/templates-prototype.git
+
+oder Clone mittels HTTPS:    
+
+    https://github.com/dmkzwo/templates-prototype.git
+    
+Installation von Abhängigkeiten:
+    
     cd templates-prototype
     npm install
+    
+### Pattern Lab starten
+    
     gulp patternlab:serve
+    
+Der Build-Prozess ist im Prototype nicht enthalten.    
    
    
 ## Patterns (Atomic Design)
@@ -81,7 +95,7 @@ Style-Klassen von externen Frameworks (Bootstrap) und Paketen werden unveränder
 
 Die Namen der projektspezifischen Style-Klassen und -Dateien korrelieren jeweils mit den Patterns, in denen sie eingesetzt werden.
 
-Zusätzlich kommt folgende Namespaces zum Einsatz:
+Zusätzlich kommen folgende Namespaces (Prefixes) zum Einsatz:
 
 * **c-** Style-Klassen für Content-Elemente
 * **fr-** Style-Klassen für Layout und übergreifende Seiten-Elemente (z.B. Navigation)
