@@ -73,11 +73,9 @@ body {
   display: block;
   content: ' ';
   background-image: url(images/sprites/sprite.png);
-  background-position: 0px -128px;
-  width: 128px;
-  height: 128px;
-  scale: 0.25;
-  zoom: 0.25; }
+  background-position: 0px -32px;
+  width: 32px;
+  height: 32px; }
 
 .c-content-container h3 {
   text-decoration: underline; }

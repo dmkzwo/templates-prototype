@@ -27,8 +27,5 @@
         content: ' ';
 
         @include sprite($up);
-
-        scale: 0.25;
-        zoom: 0.25;
     }
 }
