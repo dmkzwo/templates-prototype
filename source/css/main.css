@@ -16,6 +16,17 @@ body {
 .c-headline-icon__link {
   white-space: nowrap; }
 
+.c-quote {
+  padding-left: 100px;
+  margin-bottom: 40px; }
+
+.c-quote__text {
+  font-style: italic;
+  font-weight: bold; }
+
+.c-quote__caption {
+  font-size: 9px; }
+
 .top-bar__linklist-left {
   list-style-type: none;
   margin: 0;
@@ -67,17 +78,6 @@ body {
   height: 128px;
   scale: 0.25;
   zoom: 0.25; }
-
-.c-quote {
-  padding-left: 100px;
-  margin-bottom: 40px; }
-
-.c-quote__text {
-  font-style: italic;
-  font-weight: bold; }
-
-.c-quote__caption {
-  font-size: 9px; }
 
 .c-content-container h3 {
   text-decoration: underline; }

@@ -22,7 +22,7 @@ Clone mittels SSH:
 
 oder Clone mittels HTTPS:    
 
-    https://github.com/dmkzwo/templates-prototype.git
+    git clone https://github.com/dmkzwo/templates-prototype.git
     
 Installation von Abhängigkeiten:
     
