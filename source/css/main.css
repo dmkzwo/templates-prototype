@@ -10,26 +10,11 @@ body {
   color: #ff0000;
   line-height: 50px; }
 
-h1 {
-  margin-bottom: 20px;
-  text-decoration: underline; }
-
-.headline-icon__label {
+.c-headline-icon__label {
   color: grey; }
 
-.headline-icon__link {
+.c-headline-icon__link {
   white-space: nowrap; }
-
-.quote {
-  padding-left: 100px;
-  margin-bottom: 40px; }
-
-.quote__text {
-  font-style: italic;
-  font-weight: bold; }
-
-.quote__caption {
-  font-size: 9px; }
 
 .top-bar__linklist-left {
   list-style-type: none;
@@ -44,7 +29,7 @@ h1 {
   float: left;
   border-right: 1px; }
 
-.headline-icon--with-link {
+.c-headline-icon--with-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,7 +39,7 @@ h1 {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap; }
 
-.headline-icon {
+.c-headline-icon {
   padding-bottom: 4px;
   padding-left: 40px;
   border-bottom: 1px solid black;
@@ -69,7 +54,7 @@ h1 {
       flex-wrap: nowrap;
   position: relative; }
 
-.headline-icon--icon1:before {
+.c-headline-icon--icon1:before {
   position: absolute;
   top: 0;
   left: 0;
@@ -83,30 +68,41 @@ h1 {
   scale: 0.25;
   zoom: 0.25; }
 
-.content-container h3 {
-  text-decoration: underline; }
-
-.link-block {
+.c-quote {
+  padding-left: 100px;
   margin-bottom: 40px; }
 
-.link-block__link-list {
+.c-quote__text {
+  font-style: italic;
+  font-weight: bold; }
+
+.c-quote__caption {
+  font-size: 9px; }
+
+.c-content-container h3 {
+  text-decoration: underline; }
+
+.c-link-block {
+  margin-bottom: 40px; }
+
+.c-link-block__link-list {
   list-style-type: none;
   margin: 0;
   padding: 0; }
 
-.link-block__link:before {
+.c-link-block__link:before {
   color: inherit; }
 
-.link-block__link--intern:before {
+.c-link-block__link--intern:before {
   content: '[intern] '; }
 
-.link-block__link--download:before {
+.c-link-block__link--download:before {
   content: '[download] '; }
 
-.special-container {
+.c-special-container {
   padding: 20px;
   margin-bottom: 8px; }
-  .special-container h4 {
+  .c-special-container h4 {
     text-decoration: underline; }
 
 .top-bar {

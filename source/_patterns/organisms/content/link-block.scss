@@ -1,14 +1,14 @@
-.link-block {
+.c-link-block {
     margin-bottom: $paragraph-spacer-bottom;
 }
 
-.link-block__link-list {
+.c-link-block__link-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.link-block__link {
+.c-link-block__link {
     //color: red;
 
     &:before {
@@ -16,13 +16,13 @@
     }
 }
 
-.link-block__link--intern {
+.c-link-block__link--intern {
     &:before {
         content: '[intern] ';
     }
 }
 
-.link-block__link--download {
+.c-link-block__link--download {
     &:before {
         content: '[download] ';
     }
