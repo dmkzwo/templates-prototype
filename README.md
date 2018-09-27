@@ -33,7 +33,9 @@ Installation von Abhängigkeiten:
     
     gulp patternlab:serve
     
-Der Build-Prozess ist im Prototype nicht enthalten.    
+Wenn nach Starten des Servers das Browser-Fenster leer bleiben sollte, führt eine kurze Veränderung der Fenstergröße zur korrekten Darstellung (Bug Pattern Lab).
+    
+Der Build-Prozess ist im Prototyp nicht enthalten.    
    
    
 ## Patterns (Atomic Design)
