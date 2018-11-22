@@ -1,0 +1,10 @@
+$accentuation-max-width: 509px;
+
+.c-accentuation {
+    @include fs(26,32,conex-med-ita);
+    
+    color: $theme-color-accentuation-cl;
+    max-width: $accentuation-max-width;
+    margin-bottom: $paragraph-spacer-bottom;
+    padding-top: 10px;
+}

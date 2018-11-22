@@ -1,4 +1,3 @@
 ---
-title: Inhaltsseite Standard (lang)
+title: Inhaltsseite Standard (lange Texte)
 ---
-lorem ipsum

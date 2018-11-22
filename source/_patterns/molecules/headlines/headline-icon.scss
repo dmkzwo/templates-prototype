@@ -1,31 +1,52 @@
 .c-headline-icon {
+    min-height: 50px;
     padding-bottom: 4px;
-    padding-left: 40px;
-    border-bottom: 1px solid black;
+    padding-left: 51px;
+    border-bottom: 1px solid $color-headline-icon-border;
     margin-bottom: $headline-icon-spacer-bottom;
+    position: relative;
+    
+    //&:before {
+    //    position: absolute;
+    //    bottom: 10px;
+    //    left: 0;
+    //    z-index: 1;
+    //    display: block;
+    //}
+}
+
+.c-headline-icon__container {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    position: relative;
+    align-items: flex-end;
 }
 
 .c-headline-icon__label {
-    color: grey;
+    @include fs(22,26,med);
+    
+    text-transform: uppercase;
+    padding-top: 14px;
 }
 
 .c-headline-icon__link {
+    @include fs(15,21,med);
+    
     white-space: nowrap;
+    
+    &:before {
+        content: '» ';
+    }
 }
 
-.c-headline-icon--icon1 {
-    &:before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        display: block;
-        content: ' ';
-
-        @include sprite($up);
-    }
+.c-headline-icon__icon {
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    fill: $color-text-default;
 }

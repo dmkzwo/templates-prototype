@@ -67,7 +67,7 @@
   "patternExtension": "mustache",
   "patternStateCascade": ["inprogress", "inreview", "complete"],
   "patternExportDirectory": "./pattern_exports/",
-  "patternExportPatternPartials": ["pages-testpage"],
+  "patternExportPatternPartials": ["pages-contentpage-standard", "pages-contentpage-standard-theme", "pages-contentpage-standard~long"],
   "serverOptions": {
     "wait": 1000,
     "ignore": "*.scss",

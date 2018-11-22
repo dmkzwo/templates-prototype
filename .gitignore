@@ -7,3 +7,6 @@ Thumbs.db
 .idea/
 public
 /pattern_exports
+/temp
+
+/lightbox.html

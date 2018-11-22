@@ -1,13 +1,32 @@
+$quote-margin-left: 134px;
+$quote-max-width: 636px;
+
 .c-quote {
-    padding-left: 100px;
     margin-bottom: $paragraph-spacer-bottom;
+    max-width: $quote-max-width;
+    padding-top: 10px;
+}
+
+.c-quote__image {
+    @include svg-style(107,56,$theme-color-quote-image);
+
+    float: left;
+    width: $quote-margin-left;
+    opacity: 0.3;
+    margin-top: 4px;
 }
 
 .c-quote__text {
-    font-style: italic;
-    font-weight: bold;
+    @include fs(26,32,conex-med-ita);
+    
+    color: $theme-color-quote-cl;
+    margin-left: $quote-margin-left;
+    margin-bottom: 10px;
 }
 
 .c-quote__caption {
-    font-size: 9px;
+    @include fs(15,21);
+    
+    color: $theme-color-quote-cl;
+    margin-left: $quote-margin-left;
 }

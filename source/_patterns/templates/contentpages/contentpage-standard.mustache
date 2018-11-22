@@ -1,25 +1,42 @@
-<div class="container">
-    <div class="row">
-        <div class="col-md-8">
+<header class="fr-header-content">
+    {{> organisms-top-navigation }}
+    {{> organisms-search-layer }}
+    {{> organisms-main-navigation }}
+    {{> organisms-breadcrumb-navigation }}
+</header>
 
-            {{> atoms-headline-main }}
-            {{> organisms-content-container }}
+<div class="fr-main-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <main class="fr-main-column">
 
-            {{> molecules-quote }}
+                    {{> organisms-content-intro }}
+                    {{> organisms-anchor-links }}
+                    {{> organisms-content-container }}
 
-            {{> organisms-special-container }}
-            {{> organisms-special-container-keycolor1 }}
+                    {{> molecules-quote }}
+                    {{> organisms-content-container--only-text }}
+                    {{> atoms-accentuation }}
+                    {{> organisms-content-container--only-text }}
 
-            {{> molecules-headline-icon }}
+                    {{> organisms-accentuation-box }}
+                    {{> organisms-accentuation-box-keycolor1 }}
+                    {{> organisms-accentuation-box-keycolor2 }}
 
-            {{> organisms-link-block-intern }}
+                    {{> molecules-headline-icon }}
 
-            {{> molecules-headline-icon-with-link }}
-            {{> organisms-link-block-download }}
+                    {{> organisms-link-block-intern }}
 
-        </div>
-        <div class="col-md-4">
-            Right column
+                    {{> molecules-headline-icon-with-link }}
+                    {{> organisms-link-block-download }}
+                </main>
+            </div>
+            <div class="col-lg-4">
+                <aside class="fr-rc-column">
+                    {{> organisms-page-navigation }}
+                </aside>
+            </div>
         </div>
     </div>
 </div>

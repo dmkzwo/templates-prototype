@@ -1,14 +1,20 @@
+.theme-key-color-content {
+  color: #60810e; }
+
+.theme-key-bgcolor-1 {
+  background-color: #60810e; }
+
 .th-bgcolor-content-standard {
   background-color: lightgrey; }
 
 .th-key-color-main {
-  color: darkgreen; }
+  color: #003571; }
 
 .th-key-bgcolor-main {
-  background-color: darkgreen; }
+  background-color: #003571; }
 
 .c-content-container p > a {
-  color: darkgreen; }
+  color: #60810e; }
 
 .c-special-container.th-key-bgcolor-main h3,
 .c-special-container.th-key-bgcolor-main h4,
@@ -16,5 +22,8 @@
 .c-special-container.th-key-bgcolor-main li,
 .c-special-container.th-key-bgcolor-main p > a {
   color: white; }
+
+.c-quote__image svg {
+  fill: #60810e; }
 
 /*# sourceMappingURL=maps/theme_bibb.css.map */

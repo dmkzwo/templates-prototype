@@ -1,0 +1,111 @@
+.c-accentuation-box {
+    background: $color-accentuation-box-standard-bg;
+    padding: 20px;
+    margin-bottom: 30px;
+    
+    .c-accentuation-box + & {
+        margin-top: -22px;
+    }
+    
+    h4 {
+        @include fs(22, 25, conex-med);
+        
+        margin-bottom: 15px;
+    }
+    
+    :not(:last-child) {
+        margin-bottom: 20px;
+    }
+    
+    p {
+        @include fs(17, 23);
+    }
+    
+    p > a {
+        @include fs(15, 21, med);
+        @include link-behaviour-std;
+        
+        color: inherit;
+        display: inline-block;
+        position: relative;
+        padding-left: 15px;
+        
+        &:before {
+            @include posabs-tl;
+            
+            content: '»';
+        }
+    }
+    
+    ul,
+    ol {
+        list-style: none;
+        padding: 0;
+        
+        li {
+            @include fs(17,23,ita);
+            
+            padding-left: 23px;
+            position: relative;
+            margin-bottom: 10px;
+            
+            &:before {
+                @include posabs-tl;
+            }
+        }
+    }
+    
+    ol {
+        counter-reset: ol-li-counter;
+    }
+    
+    ol li {
+        counter-increment: ol-li-counter;
+        
+        &:before {
+            content: counter(ol-li-counter) '. ';
+        }
+    }
+    
+    ul li {
+        @include icon(bullet, 8, 23);
+        
+        &:before {
+            color: inherit;
+        }
+    }
+}
+
+// todo: use a loop for this
+.c-accentuation-box.key-color-1 {
+    background-color: $theme-color-accentuation-box-keycolor1-bg;
+    
+    h4,
+    p,
+    p > a,
+    li {
+        color: $theme-color-accentuation-box-keycolor1-cl;
+    }
+}
+
+.c-accentuation-box.key-color-2 {
+    background-color: $theme-color-accentuation-box-keycolor2-bg;
+    
+    h4,
+    p,
+    p > a,
+    li {
+        color: $theme-color-accentuation-box-keycolor2-cl;
+    }
+}
+
+.c-accentuation-box.key-color-3 {
+    background-color: $theme-color-accentuation-box-keycolor3-bg;
+    
+    h4,
+    p,
+    p > a,
+    li {
+        color: $theme-color-accentuation-box-keycolor3-cl;
+    }
+}

@@ -1,0 +1,138 @@
+.fr-page-navigation {
+    margin-bottom: 40px;
+}
+
+// Sibling pages
+
+.fr-page-navigation__siblings {
+    margin-bottom: 9px;
+    overflow: hidden;
+}
+
+.fr-page-navigation__parent {
+    position: relative;
+}
+
+.fr-page-navigation__parent-link {
+    @include font-semibold;
+
+    position: relative;
+    z-index: 2;
+    background-color: $color-page-navigation-parent-link-bg;
+    color: $color-page-navigation-parent-link-text;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100%;
+    padding: 15px 65px 15px 15px;
+    
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+        color: $color-page-navigation-parent-link-text;
+    }
+}
+
+.fr-page-navigation__siblings-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    display: block;
+    width: 50px;
+    height: 100%;
+    color: white;
+    background-color: $color-page-navigation-siblings-link-bg;
+    text-align: center;
+    
+    @include svg-style(17,17);
+    
+    svg {
+        display: inline-block;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &:hover,
+    &:focus {
+        @include svg-color(white);
+        
+        background-color: $color-page-navigation-siblings-link-bg-hover;
+    }
+}
+
+.fr-page-navigation__siblings-list {
+    margin-top: 1px;
+    max-height: 0;
+    transition: max-height 0.5s ease;
+    
+    &.js-page-navigation-siblings-open {
+        max-height: 1000px;
+        transition: max-height 0.5s ease;
+    }
+}
+
+.fr-page-navigation__sibling-link {
+    @include font-regular;
+    
+    background-color: $color-page-navigation-actpage-list-bg;
+    color: $color-page-navigation-actpage-list-text;
+    font-size: 15px;
+    line-height: 22px;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 25px;
+    margin-bottom: 1px;
+    
+    &--active {
+        @include font-semibold;
+    }
+    
+    &:hover,
+    &:focus {
+        @include font-semibold;
+        
+        color: $color-page-navigation-actpage-list-text;
+    }
+}
+
+// Child pages
+
+.fr-page-navigation__childs {
+    border-bottom: 10px solid $theme-color-page-navigation-actpage-bg;
+}
+
+.fr-page-navigation__actpage {
+    @include font-semibold;
+    
+    background-color: $theme-color-page-navigation-actpage-bg;
+    color: $color-page-navigation-actpage-text;
+    font-size: 15px;
+    line-height: 22px;
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 1px;
+}
+
+.fr-page-navigation__child-link {
+    @include font-regular;
+    
+    background-color: $color-page-navigation-actpage-list-bg;
+    color: $color-page-navigation-actpage-list-text;
+    font-size: 15px;
+    line-height: 22px;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 25px;
+    margin-bottom: 1px;
+    
+    @include link-behaviour-std;
+
+    &:hover,
+    &:focus {
+        color: $color-page-navigation-actpage-list-text;
+    }
+}

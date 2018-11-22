@@ -1,5 +1,139 @@
 .c-content-container {
-    h3 {
-        text-decoration: underline;
+    margin-bottom: $content-element-spacer-bottom;
+    
+    h2 {
+        @include fs(26,32,conex-med);
+        
+        margin-bottom: 8px;
+    }
+    
+    ul,
+    ol,
+    .table-container {
+        margin-bottom: 25px;
+    }
+    
+    p + ul,
+    p + ol,
+    p + .table-container,
+    ul + .table-container,
+    ol + .table-container {
+        margin-top: 30px;
+    }
+    
+    p {
+        @include clearfix;
+        @include fs(19,25);
+    
+        margin-bottom: 20px;
+    }
+
+    p > a {
+        @include fs(17,23,conex-med);
+        @include link-behaviour-std;
+        
+        color: $theme-color-link-cl;
+        display: inline-block;
+        position: relative;
+        padding-left: 15px;
+        
+        &:before {
+            @include posabs-tl;
+            
+            content: '»';
+        }
+    }
+    
+    ul,
+    ol {
+        list-style: none;
+        padding: 0;
+        
+        li {
+            @include fs(19,25,ita);
+    
+            padding-left: 30px;
+            position: relative;
+            margin-bottom: 10px;
+
+            &:before {
+                @include posabs-tl;
+            }
+        }
+    }
+    
+    ol {
+        counter-reset: ol-li-counter;
+    }
+
+    ol li {
+        counter-increment: ol-li-counter;
+        
+        &:before {
+            content: counter(ol-li-counter) '. ';
+        }
+    }
+    
+    ul li {
+        @include icon(bullet, 9, 25);
+        @include icon-color($theme-color-bullet);
+    }
+
+    figure {
+        float: left;
+        margin-right: 21px;
+        margin-bottom: 20px;
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    
+    figcaption {
+        @include fs(10,10);
+        
+        padding-top: 10px;
+    }
+
+    .table-container {
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        min-width: 600px;
+        max-width: 100%;
+        border-top: 3px solid $color-text-default;
+    }
+    
+    th,
+    td {
+        padding: 10px;
+    }
+    
+    th {
+        @include fs(17,26,conex-med);
+        
+        background-color: $color-table-header-bg;
+    }
+    
+    td {
+        @include fs(17,26,conex);
+    
+        border-bottom: 1px solid $color-table-td-border-color;
     }
 }
+
+.c-content-container__image {
+    height: auto;
+    
+    &--landscape {
+        max-width: 279px;
+    }
+    
+    &--portrait {
+        max-width: 200px;
+    }
+}
+

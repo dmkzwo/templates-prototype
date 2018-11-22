@@ -1,0 +1,20 @@
+.c-content-intro {
+    p {
+        @include fs(22,30,med-ita);
+        
+        margin-bottom: 42px;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    figcaption {
+        @include fs(13,17);
+        
+        padding-top: 10px;
+    }
+    
+    margin-bottom: 50px;
+}

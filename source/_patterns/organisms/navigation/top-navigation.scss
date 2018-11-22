@@ -1,0 +1,101 @@
+.fr-top-navigation {
+    background-color: $color-top-navigation-bg;
+}
+
+.fr-top-navigation__inside {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.fr-top-navigation__item {
+    display: table-cell;
+}
+
+.fr-top-navigation__link {
+    @include fs(15,21);
+    @include svg-style(22,22,$color-top-navigation-link-text);
+    
+    display: block;
+    padding: 10px 20px;
+    
+    .fr-top-navigation__box-left & {
+        border-right: 1px solid white;
+    }
+    
+    .fr-top-navigation__box-right & {
+        border-left: 1px solid white;
+    }
+    
+    span {
+        display: none;
+        margin-left: 10px;
+        color: $color-top-navigation-link-text;
+    }
+    
+    &[href]:hover,
+    &[href]:focus {
+        @include svg-color($color-top-navigation-link-text-hover);
+    
+        background-color: $color-top-navigation-link-bg-hover;
+
+        span {
+            color: $color-top-navigation-link-text-hover;
+        }
+    }
+    
+    &--search {
+        @include svg-color($color-top-navigation-link-search-cl);
+    
+        background-color: $color-top-navigation-link-search-bg;
+
+        span {
+            color: $color-top-navigation-link-search-cl;
+        }
+    
+        &[href]:hover,
+        &[href]:focus {
+            background-color: $color-top-navigation-link-search-hover-bg;
+    
+            span {
+                color: $color-top-navigation-link-text-hover;
+            }
+        }
+    }
+    
+    @include media-breakpoint-up(lg) {
+        span {
+            display: inline-block;
+        }
+    }
+}
+
+//.fr-top-navigation__box-left {
+//    .fr-top-navigation__item:first-child {
+//        .fr-top-navigation__link {
+//            padding-left: 0;
+//        }
+//    }
+//}
+
+//.fr-top-navigation__link-inner {
+//    @include fs(15,21);
+//
+//    display: inline-block;
+//    padding-left: 5px;
+//    color: $color-top-navigation-link-text;
+//
+//    &:hover,
+//    &:focus {
+//        font-style: italic;
+//        color: $color-top-navigation-link-text;
+//    }
+//
+//    &:last-child {
+//        &:before {
+//            content: '|';
+//            padding-right: 10px;
+//        }
+//    }
+//
+//}
