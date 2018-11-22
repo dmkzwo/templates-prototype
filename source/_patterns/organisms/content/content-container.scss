@@ -4,6 +4,18 @@
     h2 {
         @include fs(26,32,conex-med);
         
+        margin-bottom: 10px;
+    }
+    
+    h3 {
+        @include fs(23,30,conex-med);
+        
+        margin-bottom: 8px;
+    }
+    
+    h4 {
+        @include fs(20,26,conex-med);
+        
         margin-bottom: 8px;
     }
     
