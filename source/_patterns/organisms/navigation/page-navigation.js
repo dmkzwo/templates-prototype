@@ -35,10 +35,12 @@ class PageNavigation {
         this.isMoving = true;
 
         if (this.isOpen) {
+            this.$wrapper.removeClass('fr-page-navigation__siblings-link--active');
             this.$wrapper.find('.js-page-navigation-siblings-list').removeClass('js-page-navigation-siblings-open');
             this.$wrapper.find('.js-page-navigation-siblings-list a').attr('tabIndex', -1);
             this.isOpen = false;
         } else {
+            this.$wrapper.addClass('fr-page-navigation__siblings-link--active');
             this.$wrapper.find('.js-page-navigation-siblings-list').addClass('js-page-navigation-siblings-open');
             this.$wrapper.find('.js-page-navigation-siblings-list a').attr('tabIndex', 0);
             this.isOpen = true;

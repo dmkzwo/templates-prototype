@@ -13,8 +13,8 @@
 }
 
 .fr-top-navigation__link {
-    @include fs(15,21);
-    @include svg-style(22,22,$color-top-navigation-link-text);
+    @include fs(15, 21);
+    @include svg-style(22, 22, $color-top-navigation-link-text);
     
     display: block;
     padding: 10px 20px;
@@ -36,9 +36,9 @@
     &[href]:hover,
     &[href]:focus {
         @include svg-color($color-top-navigation-link-text-hover);
-    
+        
         background-color: $color-top-navigation-link-bg-hover;
-
+        
         span {
             color: $color-top-navigation-link-text-hover;
         }
@@ -46,17 +46,17 @@
     
     &--search {
         @include svg-color($color-top-navigation-link-search-cl);
-    
+        
         background-color: $color-top-navigation-link-search-bg;
-
+        
         span {
             color: $color-top-navigation-link-search-cl;
         }
-    
+        
         &[href]:hover,
         &[href]:focus {
             background-color: $color-top-navigation-link-search-hover-bg;
-    
+            
             span {
                 color: $color-top-navigation-link-text-hover;
             }
@@ -66,6 +66,28 @@
     @include media-breakpoint-up(lg) {
         span {
             display: inline-block;
+        }
+    }
+    
+    @include media-breakpoint-up(md) {
+        &--search,
+        &--user,
+        &--language {
+            span {
+                display: inline-block;
+            }
+            
+            .fr-top-navigation__link-label--short {
+                display: none;
+            }
+        }
+    }
+    
+    @include media-breakpoint-only(sm) {
+        &--language {
+            .fr-top-navigation__link-label--short {
+                display: inline-block;
+            }
         }
     }
 }

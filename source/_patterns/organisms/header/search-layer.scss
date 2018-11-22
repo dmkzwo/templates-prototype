@@ -6,6 +6,8 @@ $searchlayer-gap-small: 40px;
 $searchlayer-gap-large: 140px;
 
 .fr-header-search-layer {
+    @include boxshadow-header;
+    
     position: absolute;
     top: 0;
     left: 0;

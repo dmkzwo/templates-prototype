@@ -25,6 +25,7 @@
     color: $theme-color-link-cl;
     position: relative;
     padding-left: 20px;
+    display: block;
     
     &:before {
         @include posabs-tl;

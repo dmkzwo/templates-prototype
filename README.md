@@ -12,6 +12,7 @@ Sie soll einen Einblick in den aktuellen Stand geben, darf aber noch nicht als B
 Der Einfachheit halber (kein Patternlab notwendig) werden die fertig umgesetzten Seiten noch einmal hier zum direkten Aufruf im Browser zur Verfügung gestellt:
 
 http://bibb-test.dmkzwo-service.de/page.php?page=pages-contentpage-standard  
+http://bibb-test.dmkzwo-service.de/page.php?page=pages-contentpage-standard-long  
 http://bibb-test.dmkzwo-service.de/page.php?page=pages-contentpage-standard-theme
 
 Zugang: wie altes Template-System
@@ -279,5 +280,5 @@ Desweiteren ist der Punkt *Ausbildungsvergütung* (Unterpunkte) verlinkt
  
  * Die Lightbox funktioniert nicht innerhalb von PatternLab
  * Ein Bug in Edge führt dazu, dass Javascript Events nicht immer verarbeitet werden
- 
+ * Vulnaribilities in zwei Node Modulen
  
